@@ -4,9 +4,9 @@
 
     "asset_groups": [
         {
-            "mode": "update",
+            "mode": "create",
             "instance_ids": "4172e3307e634a5a9d5c8f163e782dd5",
-            "group_id": "134",
+            "group_id": "",
             "group_name": "AWS Dynamic Asset Group",
             "group_description": "Dynamic AWS Asset Group created via API"
         },
