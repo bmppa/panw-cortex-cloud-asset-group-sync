@@ -382,12 +382,6 @@ Verify:
 
 ---
 
-# License
-
-Internal / Custom Usage
-
----
-
 # Disclaimer
 
 Test in a non-production environment before deploying to production systems.
