@@ -1,0 +1,36 @@
+name: Cortex Cloud Asset Group Sync
+
+on:
+  schedule:
+    # Runs every 8 hours
+    - cron: "0 */8 * * *"
+
+  workflow_dispatch:
+
+jobs:
+
+  sync-asset-groups:
+
+    runs-on: ubuntu-latest
+
+    env:
+      API_KEY_VALUE: ${{ secrets.API_KEY_VALUE }}
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set Up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run Script
+        run: |
+          python asset-group-multiple.py

@@ -1,0 +1,28 @@
+{
+    "fqdn": "https://api-ms-ccr.xdr.us.paloaltonetworks.com/",
+    "api_key_id": "118",
+
+    "asset_groups": [
+        {
+            "mode": "update",
+            "instance_ids": "4172e3307e634a5a9d5c8f163e782dd5",
+            "group_id": "134",
+            "group_name": "AWS Dynamic Asset Group",
+            "group_description": "Dynamic AWS Asset Group created via API"
+        },
+        {
+            "mode": "update",
+            "instance_ids": "9d12496ce63244738512676aa68f9983",
+            "group_id": "135",
+            "group_name": "Azure Dynamic Asset Group",
+            "group_description": "Dynamic Azure Asset Group created via API"
+        },
+        {
+            "mode": "update",
+            "instance_ids": "d4cee49b20df4d6397c2bc847c6df698",
+            "group_id": "137",
+            "group_name": "GCP Dynamic Asset Group",
+            "group_description": "Dynamic GCP Asset Group created via API"
+        }
+    ]
+}
