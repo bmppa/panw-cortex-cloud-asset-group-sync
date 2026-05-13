@@ -33,4 +33,4 @@ jobs:
 
       - name: Run Script
         run: |
-          python asset-group-multiple.py
+          python asset-group-sync.py
